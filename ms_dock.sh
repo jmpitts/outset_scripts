@@ -16,7 +16,7 @@ then
 	${dockutil} --add /Applications/Safari.app --no-restart
 	${dockutil} --add /Applications/Firefox.app --no-restart
 	${dockutil} --add /Applications/Google\ Chrome.app --no-restart
-	${dockutil} --add smb://svrnas02.mvsd.local/Sites/MS/MS%20Student%20Shares --label "MS Student Shares" --no-restart
+	${dockutil} --add smb://server.local/Sites/MS/MS%20Student%20Shares --label "MS Student Shares" --no-restart
 elif [ $GROUP == "Staff" ]
 then
 	# Delete everything in dock
@@ -33,6 +33,6 @@ then
 	${dockutil} --add /Applications/Microsoft\ PowerPoint.app --no-restart
 	${dockutil} --add /Applications/Microsoft\ Excel.app --no-restart
 	${dockutil} --add /Applications/Sophos\ Endpoint.app --no-restart
-	${dockutil} --add smb://svrnas02.mvsd.local/Sites/MS/MS%20STAFF --label "MS Staff" --no-restart
-	${dockutil} --add smb://svrnas02.mvsd.local/Home/StaffHome/$USER --label $USER
+	${dockutil} --add smb://server.local/Sites/MS/MS%20STAFF --label "MS Staff" --no-restart
+	${dockutil} --add smb://server.local/Home/StaffHome/$USER --label $USER
 fi
