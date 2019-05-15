@@ -1,2 +1,2 @@
 # outset_scripts
-Various scripts for doing shit with Outset
+Various scripts for doing stuff with Outset
